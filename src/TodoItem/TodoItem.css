@@ -1,0 +1,41 @@
+.TodoItem {
+  background-color: #041955;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  padding: 0 15px;
+  color: #fff;
+  height: 60px;
+  border-radius: 8px;
+  /* justify-content: space-between; */
+}
+
+.TodoItem-p {
+  margin: 24px 0 24px 24px;
+  width: calc(100% - 60px);
+}
+.TodoItem-p--complete {
+  text-decoration: line-through;
+}
+.Icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.Icon-check {
+  transform: rotate(180deg);
+}
+.Icon-check--active {
+  color: #4caf50;
+}
+
+.Icon-delete:hover {
+  color: red;
+}
